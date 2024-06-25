@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import nodejs from "@iconify/icons-logos/css-3";
-import mongodb from "@iconify/icons-logos/nodejs-icon";
-import reactIcon from "@iconify/icons-logos/react";
+import css from "@iconify/icons-logos/css-3";
+import nodejs from "@iconify/icons-logos/nodejs-icon";
+import react from "@iconify/icons-logos/react";
 
 
 class About extends Component {
@@ -36,11 +36,11 @@ class About extends Component {
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={reactIcon}
+                    icon={css}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={mongodb}
+                    icon={react}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
