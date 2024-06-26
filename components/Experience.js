@@ -14,30 +14,43 @@ class Experience extends Component {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
-        var mainTech = mainTechnologies.map((technology, i) => {
+        var mainTech = mainTechnologies.map((technology, j) => {
           return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
-              {technology}
+            <Badge pill className="" key={j}>
+              {i === 1 ? "" : technology}
             </Badge>
           );
         });
-        var tech = technologies.map((technology, i) => {
+
+        var tech = technologies.map((technology, j) => {
           return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
-              {technology}
+            <Badge pill className="experience-badge mr-2 mb-2" key={j}>
+              {i === 1 ? "" : technology}
             </Badge>
           );
         });
+
+        // Ajout de la condition pour une deuxième classe
+        const elementClassName =
+          i === 1
+            ? "vertical-timeline-element--work second-work-element"
+            : "vertical-timeline-element--work";
+
+        // Définir l'icône conditionnelle
+        const icon = i === 1 
+          ? <i className="fas fa-user-headset experience-icon"></i>
+          : <i className="fab fa-dev experience-icon"></i>;
+
         return (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className={elementClassName}
             date={work.years}
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={icon}
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
