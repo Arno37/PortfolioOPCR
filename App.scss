@@ -53,9 +53,8 @@ header {
 }
 
 .project-date {
-	font-size: 16px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: 8px 15px 2px 15px;
+
+	
 	position: relative;
 	z-index: -500;
 	border-top: 5px solid #696969;
@@ -121,11 +120,6 @@ header h1 {
 	text-align: center;
 }
 
-.foto img {
-	display: block;
-	width: 100%;
-}
-
 .foto div {
 	background: #ffffff;
 	display: inline-block;
@@ -162,12 +156,12 @@ header h1 {
 }
 
 .project-title-settings {
-	margin-top: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
-	text-transform: uppercase;
+	
 	letter-spacing: 3px;
 	color: black;
 	text-align: center;
+	font-size:large;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .polaroid img {
@@ -323,9 +317,10 @@ header h1 {
 
 .modal-description {
 	text-align: justify;
-	padding: 5px 5px 0 5px;
+	padding: 5px 5px 0 0px;
 	margin-bottom: 20px;
-	font-size: 12px;
+	font-size: 15px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .awssld__next {
